@@ -43,6 +43,8 @@ _start:
 
     ; Output a newline
     mov eax, 4                ; sys_write
+
+// end
     mov ebx, 1                ; File descriptor (stdout)
     mov ecx, newline          ; Pointer to newline character
     mov edx, 1                ; Length of newline
